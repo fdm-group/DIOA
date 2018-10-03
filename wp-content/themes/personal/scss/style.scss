@@ -1,0 +1,95 @@
+/*
+Theme Name: Disability is our ability
+Author: Afshan
+Description: disability is our ability
+
+*/
+
+/* Variables */
+@import "colors.scss";
+$spacing: 30px;
+$portfolio: "single-portfolio > .relative";
+
+/* @mixin */
+
+@mixin padding($size){
+  padding:$size;
+}
+
+
+
+/* Navigation */
+.front-page {
+  overflow: hidden;
+  li {
+    display: inline;
+      a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+
+/* front page style */
+.brands-area h1, .facts-area > .container h1{
+  color: $white;
+}
+
+.col single-brand{
+  @include padding(10px);
+}
+.home-about-area{
+  margin-bottom: $spacing;
+}
+
+.facts-area{
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  @include padding(70px);
+  color: $white;
+}
+
+/* footer */
+
+.menu-content{
+  background:-webkit-linear-gradient(0deg, #e6e6e6 0%, #ffffff 100%);
+  @include padding(30px);
+}
+
+.title{
+  color: $grey;
+}
+
+.contact-page-area{
+  padding-top: 50px;
+}
+
+.content{
+  background-color:$bgColour;
+  @include padding(60px);
+
+  p{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  h2{
+    padding-bottom:$spacing;
+  }
+}
+
+/* Page style */
+.#{$portfolio} > .thumb > .img-fluid{
+  border-radius: 20px;
+  margin: $spacing;
+  width: 250px;
+  height: 300px;
+}
+
+.#{$portfolio} > .middle{
+  color: $white;
+}

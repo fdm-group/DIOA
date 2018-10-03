@@ -1,0 +1,12 @@
+/*
+Theme Name: Disability is our ability
+Author: Afshan
+Description: example theme
+
+*/
+
+header#header-img{
+			background-image: url('../img/header.jpg');
+			background-repeat: no-repeat;
+			height: 100px;
+		}
